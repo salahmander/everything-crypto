@@ -18,6 +18,11 @@ const NavBar = () => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
+          <Button
+            className="menu-control-container"
+          >
+            <MenuOutlined />
+          </Button>
           <Link to="/">Everything Crypto</Link>
         </Typography.Title>
       </div>

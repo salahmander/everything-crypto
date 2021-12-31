@@ -29,6 +29,7 @@ const News = ({ simplified }) => {
             placeholder="Select a Crypto"
             optionFilterProp="children"
             onChange={(value) => setNewsCategory(value)}
+            // Filter out the options and show the selected crypto news 
             filterOption={(input, option) =>
               option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
             }
@@ -49,6 +50,7 @@ const News = ({ simplified }) => {
                   {news.name}
                 </Title>
                 <img
+                  style={{ maxWidth: "200px", maxHeight: "100px" }}
                   src={news?.image?.thumbnail?.contentUrl || demoImage}
                   alt=""
                 />

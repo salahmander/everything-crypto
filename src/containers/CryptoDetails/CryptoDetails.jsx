@@ -69,8 +69,8 @@ const CryptoDetails = () => {
       icon: <MoneyCollectOutlined />,
     },
     {
-      title: "Aprroved Supply",
-      value: cryptoDetails?.supply?.confirmed ? (
+      title: "Approved Supply",
+      value: cryptoDetails?.confirmedSupply ? (
         <CheckOutlined />
       ) : (
         <StopOutlined />
@@ -80,15 +80,15 @@ const CryptoDetails = () => {
     {
       title: "Total Supply",
       value: `$ ${
-        cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
+        cryptoDetails?.totalSupply && millify(cryptoDetails?.totalSupply)
       }`,
       icon: <ExclamationCircleOutlined />,
     },
     {
       title: "Circulating Supply",
       value: `$ ${
-        cryptoDetails?.supply?.circulating &&
-        millify(cryptoDetails?.supply?.circulating)
+        cryptoDetails?.circulatingSupply &&
+        millify(cryptoDetails?.circulatingSupply)
       }`,
       icon: <ExclamationCircleOutlined />,
     },

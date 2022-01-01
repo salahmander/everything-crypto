@@ -20,6 +20,8 @@ const CryptoCurrencies = ({ simplified }) => {
     setCryptos(filteredData);
   }, [cryptoList, searchTerm]);
 
+  if (isFetching) return "Loading...";
+
   return (
     <>
       {!simplified && (
@@ -36,7 +38,13 @@ const CryptoCurrencies = ({ simplified }) => {
             <Link key={currency.id} to={`/crypto/${currency.id}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
-                extra={<img className="crypto-image" src={currency.iconUrl} />}
+                extra={
+                  <img
+                    className="crypto-image"
+                    src={currency.iconUrl}
+                    alt="crypto"
+                  />
+                }
                 hoverable
               >
                 <p>Price: {millify(currency.price)}</p>

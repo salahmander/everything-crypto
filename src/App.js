@@ -10,7 +10,6 @@ import NavBar from "./components/NavBar/NavBar";
 
 // Containers
 import HomePage from "./containers/HomePage/HomePage";
-import Exchanges from "./containers/Exchanges/Exchanges";
 import News from "./containers/News/News";
 import Cryptocurrencies from "./containers/Cryptocurrencies/Cryptocurrencies";
 import CryptoDetails from "./containers/CryptoDetails/CryptoDetails";
@@ -27,9 +26,6 @@ const App = () => {
             <Switch>
               <Route exact path="/">
                 <HomePage />
-              </Route>
-              <Route exact path="/exchanges">
-                <Exchanges />
               </Route>
               <Route exact path="/cryptocurrencies">
                 <Cryptocurrencies />

@@ -1,6 +1,5 @@
 # 🪙 Everything Crypto
 
-## 🌍 Overview
 **Everything Crypto** is your go-to cryptocurrency dashboard, offering real-time insights similar to CoinMarketCap. Stay ahead with essential data on:
 
 - **Prices**  

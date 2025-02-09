@@ -1,4 +1,4 @@
-# 🪙 Everything Crypto
+# 🪙 Everything Crypto [Archived]
 
 **Everything Crypto** is your go-to cryptocurrency dashboard, offering real-time insights similar to CoinMarketCap. Stay ahead with essential data on:
 
